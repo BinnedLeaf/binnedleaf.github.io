@@ -1,0 +1,586 @@
+/* global styles */
+
+/*
+
+font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Architects Daughter', cursive;
+
+*/
+
+
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+}
+
+@font-face {
+   font-family: "Press Start 2P";
+   src: url(fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+   font-family: "Baloo Chettan 2";
+   src: url(fonts/Baloo_Chettan_2/BalooChettan2-VariableFont_wght.ttf);
+}
+
+@font-face {
+   font-family: 'Bebas Neue', cursive;
+   src: url();
+}
+
+@font-face {
+   font-family: 'Architects Daughter', cursive;
+   src: url(fonts/ArchitectsDaughter-Regular.ttf);
+}
+
+body {
+   background-image: url(images/band.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+
+
+.wrapper {
+   max-width: 1280px;
+   margin: auto;
+}
+
+/* Navigation section */
+
+.navigation {
+   background-color:rgb(255, 255, 255);
+   padding:40px;
+   width:100%;
+   display:flex;
+   justify-content: space-between;
+
+}
+
+.navigation a {
+   color: white;
+   border-radius: 30%;
+   text-decoration: none;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 20px;
+   padding: 15px;
+   background-color: rgb(255, 255, 255);
+   display: block;
+   transition:1s;
+}
+
+.navigation a:hover {
+   background-color: rgb(189, 232, 255);
+   color:rgb(84, 84, 84);
+   border-radius: 10%;
+   transform:scale(2);
+}
+
+
+/*----------------------------------------------*/
+
+/* hero section */
+
+/*----------------------------------------------*/
+
+.hero {
+   justify-content: center;
+   background-color: rgb(255, 255, 255);
+   padding: 20px;
+   box-shadow: 2px 2px 1px lightgrey;
+   height: 500px;
+   background-size: cover;
+   background-position: center;
+}
+
+.artisthero {
+   height: 400px;
+   background-image: url(images/artistbackground.jpg);
+}
+
+
+.hero h1 {
+   font-family: 'Architects Daughter', cursive;
+   font-weight: normal;
+}
+
+
+.hero h2 {
+   font-family: 'Architects Daughter', cursive;
+   color:rgb(0, 0, 0);
+   font-size: 10px;
+   background-color: #ffffffa4;
+   border-bottom-left-radius: 10%;
+   border-bottom-right-radius: 10%;
+   border-top-left-radius: 30%;
+   border-top-right-radius: 20%;
+}
+
+.hero img {
+   width: 300px;
+   text-align: center;
+   margin-left: 85px;
+}
+
+
+.hero p {
+   color: rgb(0, 0, 0);
+   font-family: 'Architects Daughter', cursive;
+   font-weight: bold;
+   font-size: 10px;
+   margin-bottom: 30px;
+   background-color: #ffffffa4;
+   border-bottom-left-radius: 20%;
+   border-bottom-right-radius: 30%;
+   border-top-left-radius: 10%;
+   border-top-right-radius: 10%;
+}
+
+.hero a {
+   transition-delay: 0.1s;
+   transition-duration: 0.6s;
+   -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+ 
+}
+
+.hero img:hover {
+  transform:scale(1.5);
+}
+
+/*----------------------------------------------*/
+
+/* Lineup  section */
+
+/*----------------------------------------------*/
+
+.lineup{
+   background-color: rgb(255, 255, 255);
+   padding:60px;
+   background-image: url(images/blurclose.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.lineup a {
+   display: block;
+   border-radius: 30%;
+   font-family: 'Architects Daughter', cursive;
+   color: #ffffff;
+   font-size: 30px;
+   text-decoration: none;
+   background-color: rgba(0, 0, 0, 0.51);
+   margin: 10px;
+   padding: 10px;
+   transition: 0.5s;
+}
+
+
+.lineup a:hover {
+   color: #5b63dc;
+   transform:scale(1) rotate(-8deg) skew(5deg);
+   background-color: #ffffff;
+}
+
+
+ 
+/* content section */
+ 
+.content {
+   background-color: white;
+   padding: 60px;
+   -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.content h1 {
+   font-family: 'Architects Daughter', cursive;
+   font-size: 40px;
+   font-weight: normal;
+   text-align: center;
+   padding-bottom: 30px;
+   color: rgb(0, 0, 0);
+   background-image: url(images/blurclose.jpg);
+   -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.content h2 {
+   font-family: 'Architects Daughter', cursive;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: normal;
+   text-align: center;
+}
+
+.content p {
+   color: rgb(0, 0, 0);
+   font-family: 'Architects Daughter', cursive;
+   text-align: center;
+   font-size: 20px;
+}
+
+
+h1 {
+   color: rgb(0, 0, 0);
+   font-size: 60px;
+   word-spacing: 30px;
+   text-shadow: 2px 2px 4px rgb(163, 163, 163);
+}
+
+/*----------------------------------------------*/
+
+/* info section */
+
+/*----------------------------------------------*/
+
+.info{
+   display:flex;
+   flex-wrap: wrap;
+   border:5px solid white;
+   justify-content: center;
+}
+
+.infobox{
+   border:5px solid white;
+   background-color: rgba(117, 111, 155, 0.48);
+   width:50%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.infobox h2 {
+   font-family: 'Architects Daughter', cursive;
+   font-size: 50px;
+   font-weight: normal;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+.infobox h3 {
+   font-family: 'Architects Daughter', cursive;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   font-weight: normal;
+   text-align: center;
+   padding: 20px;
+}
+
+.infobox figure{
+   padding: 10px;
+}
+
+.infobox p figcaption {
+   font-family: 'Architects Daughter', cursive;
+   color: white;
+   font-size: 16px;
+   text-align: justify;
+   margin-left: 20px;
+   padding: 20px;
+}
+
+.infobox h4 {
+   font-family: 'Architects Daughter', cursive;
+   color: white;
+   font-size: 20px;
+   font-weight: normal;
+   font-style: italic;
+   text-align: justify;
+   padding: 20px;
+}
+
+.infobox img {
+   width: 50%;
+   
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   margin-left: 100px;
+   display: block;
+}
+
+.infobox a {
+   color: rgb(255, 243, 251);
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.infobox a:hover {
+   color: rgb(227, 140, 198);
+   background-color: black;
+   border-radius: 40%;
+   text-decoration: overline, underline;
+}
+
+
+/*----------------------------------------------*/
+
+/* footer section */
+
+/*----------------------------------------------*/
+
+.footer {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.footer p{
+   font-family: 'Architects Daughter', cursive;
+   color: white;
+}
+
+.footer div{
+   margin:20px;
+}
+
+.footerlinks a {
+   display: block;
+   padding: 10px;
+   font-family: 'Architects Daughter', cursive;
+   font-size: 16px;
+   color: white;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+
+.social img {
+   filter: grayscale(100%) drop-shadow(0px 0px 0px black);
+   padding: 5px;
+   transition: .5s;
+   size-adjust: 40px;
+   background-color: #5b64dc19;
+   border-radius: 50%;
+}
+
+.social img:hover {
+   filter: grayscale(0%) drop-shadow(5px 5px 4px black);
+   transform: scale(1.2);
+   background-color: #00000000;
+}
+
+
+
+
+/*----------------------------------------------*/
+
+/* ARTIST PAGE */
+
+/*----------------------------------------------*/
+
+.artistcontent{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding-top:30px;
+   padding-bottom:40px;
+   backdrop-filter: blur(15px);
+   background-color: #c0c1d553;
+}
+
+.artistinfo {
+   background-color: rgba(173, 216, 230, 0.58);
+   width: 30%;
+   border-radius: 20px;
+   padding: 30px;
+   padding-bottom: 10px;
+}
+
+.pinkbg {
+   background-color: rgba(255, 107, 153, 0.5);
+}
+
+.artistinfo h2 {
+   text-align:center;
+   font-family: "Press Start 2P";
+   font-size: 28px;
+   color:rgb(255, 255, 255);
+   -webkit-text-stroke: black;
+   -webkit-text-stroke-width: 2px;
+}
+
+
+.artistinfo p {
+   text-align:center;
+   font-family: "Baloo Chettan 2", cursive;
+   padding-top: 30px;
+}
+
+.artistinfo img {
+   width: 100%;
+   border-radius: 200px;
+   border: 10px solid white;
+   box-shadow: 2px 2px 5px grey;
+   filter: grayscale();
+   transition: 0.5s;
+}
+
+.artistinfo:hover img {
+   filter: none;
+   transform: scale(1.1) rotate(-8deg);
+   box-shadow: 10px 10px 20px rgba(46, 45, 47, 0.799);
+}
+
+/*----------------------------------------------*/
+
+/* MOBILE SETTINGS */
+
+/*----------------------------------------------*/
+
+@media screen and (max-width:1280px) {
+
+   /*----------------------------------------------*/
+   /* mobile navigation */
+   
+
+.navigation {
+   flex-direction: column;
+   justify-content: flex-start;
+   overflow: hidden;
+   text-align: center;
+   height: 140px;
+   transition: 1s;
+}
+
+.navigation a{
+   background-color: #e6b7ff00;
+   padding: 20px;
+}
+
+.navigation a:hover {
+   background-color: rgb(108, 108, 109);
+   color:rgb(0, 0, 0);
+   
+   border-radius: 0;
+   transform: none;
+}
+
+.active{
+   height: 400px;
+}
+
+.hamburger {
+   display: block !important;
+   font-size: 40px !important;
+   margin-bottom: 20px;
+}
+
+   /*----------------------------------------------*/
+   /* mobile hero */
+
+
+   .hero h1{
+      font-size:6vw;
+      text-align: center;
+   }
+
+
+   .hero h2{
+      font-size:5vw;
+   }
+
+   .lineup{
+      flex-direction: column;
+   }
+   
+   /*----------------------------------------------*/
+   /* mobile content */
+
+
+   .content h1{
+      font-size:4vw;
+   }
+
+   .content h2{
+      font-size:3vw;
+   }
+
+
+   /*----------------------------------------------*/
+   /* mobile info */
+
+
+   .info{
+      flex-direction:column;
+   }
+
+   .infobox{
+      width:100%;
+   }
+
+   /*----------------------------------------------*/
+   /* mobile footer */
+
+
+   .footer{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+
+   
+   .newsletter{
+      width: 100%;
+   }
+
+
+   .newsletter h2{
+      font-size: 6vw;
+   }
+
+
+   .newsletter p{
+      font-size: 3vw;
+   }
+
+
+   .footerlinks a{
+      font-size: 6vw;
+   }
+
+
+   /*----------------------------------------------*/
+  /* mobile artists page */
+
+  .artistcontent{
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.artistinfo{
+   width: 80%;
+   text-align: center;
+}
+
+
+.artistinfo img{
+   width:50%;
+}
+
+
+.artistdetails h2{
+   padding-top:30px;
+   font-size:6vw;
+}
+
+
+.artistdetails p{
+   font-size:3vw;
+}
+
+
+}
