@@ -35,8 +35,9 @@ font-family: 'Architects Daughter', cursive;
    src: url(fonts/ArchitectsDaughter-Regular.ttf);
 }
 
+
 body {
-   background-color: #28211e;
+   background-color: #eba58d;
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -61,24 +62,26 @@ body {
 }
 
 .navigation a {
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
    border-radius: 30%;
    text-decoration: none;
-   font-family: 'Bebas Neue', cursive;
    font-size: 20px;
    padding: 5px;
-   background-color: rgb(255, 255, 255);
-   display: block;
    transition:1s;
+   display: block;
+   margin: auto;
 }
 
 .navigation a:hover {
-   background-color: rgb(189, 232, 255);
-   color:rgb(84, 84, 84);
-   border-radius: 10%;
-   transform:scale(2);
+   color:rgb(255, 255, 255);
+   transform:scale(1.2);
 }
 
+.navigation img {
+   width: 1000;
+  display: block;
+  margin: auto;
+}
 
 /*----------------------------------------------*/
 
@@ -97,14 +100,14 @@ body {
 
 
 .hero h1 {
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
    text-align: center;
 }
 
 
 .hero h2 {
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Courier New', Courier, monospace;
    color:rgb(0, 0, 0);
    font-size: 10px;
    background-color: #ffffff;
@@ -123,7 +126,7 @@ body {
 
 .hero p {
    color: rgb(0, 0, 0);
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
    font-size: 10px;
    margin-bottom: 30px;
@@ -154,13 +157,14 @@ body {
 
 .content a {
    color:#28211e;
+   font-family: 'Lucida Sans', Arial, sans-serif;
+   text-decoration: none;
 }
 
 .content a:hover {
-   color: white;
-   background-color: rgb(0, 0, 0);
-   border-radius: 10%;
-   transform:scale(1);
+   background-color: rgb(255, 253, 253);
+   border-radius: 8%;
+   transform:scale(1.2);
 }
  
 .content {
@@ -177,7 +181,7 @@ body {
 }
 
 .content h1 {
-   font-family: 'Architects Daughter', cursive;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-size: 40px;
    font-weight: normal;
    padding-bottom: 30px;
@@ -192,19 +196,24 @@ body {
 
 
 .content h2 {
-   font-family: 'Architects Daughter', cursive;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    color: rgb(0, 0, 0);
-   font-size: 25px;
+   font-size: 30px;
    font-weight: normal;
 
 }
 
 .content p {
    color: rgb(0, 0, 0);
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Lucida Sans', Arial, sans-serif;
    font-size: 20px;
+   padding-bottom: 5%;
 }
 
+.content ul {
+   font-family:'Lucida Sans', Arial, sans-serif;
+   padding-bottom: 6%;
+}
 
 h1 {
    color: rgb(255, 255, 255);
@@ -220,15 +229,16 @@ h1 {
    border-bottom-left-radius: 40px;
    border-bottom-right-radius: 40px;
 }
-
+/** Plan to have images be a carousel, and for all images to be watermarked**/
 .column {
-   flex: 50%;
-   padding: 0 4px;
+   flex: 100%;
+   padding: 12px 4px;
 }
 
-.column .instagram-media {
-   margin-top: 8px;
-   vertical-align: middle;
+.column img {
+   width: 50%;
+   display: block;
+   margin: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -249,8 +259,8 @@ h1 {
  .main {
    justify-content: center;
    text-align: center;
-   font-family: 'Architects Daughter', cursive;
-   background-color: rgb(255, 255, 255);
+   font-family: 'Courier New', Courier, monospace;
+   background-color: rgb(251, 234, 214);
    border-bottom-left-radius: 40px;
    border-bottom-right-radius: 40px;
    padding: 20px;
@@ -281,7 +291,7 @@ h1 {
 }
 
 .infobox h2 {
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Courier New', Courier, monospace;
    font-size: 50px;
    font-weight: normal;
    color: white;
@@ -289,7 +299,7 @@ h1 {
    padding: 20px;
 }
 .infobox h3 {
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Courier New', Courier, monospace;
    color: rgb(255, 255, 255);
    font-size: 20px;
    font-weight: normal;
@@ -302,7 +312,7 @@ h1 {
 }
 
 .infobox p figcaption {
-   font-family: 'Architects Daughter', cursive;
+   font-family: 'Courier New', Courier, monospace;
    color: white;
    font-size: 16px;
    text-align: justify;
@@ -311,7 +321,7 @@ h1 {
 }
 
 .infobox h4 {
-   font-family: 'Architects Daughter', cursive;
+  font-family: 'Courier New', Courier, monospace;
    color: white;
    font-size: 20px;
    font-weight: normal;
@@ -376,11 +386,11 @@ h1 {
 
 
 .social img {
-   filter: grayscale(100%) drop-shadow(0px 0px 0px black);
+   filter: grayscale(100%) drop-shadow(0px 0px 0px rgb(48, 21, 107));
    padding: 5px;
    transition: .5s;
    size-adjust: 40px;
-   background-color: #5b64dc19;
+   background-color: #ece0fb;
    border-radius: 50%;
 }
 
@@ -391,7 +401,10 @@ h1 {
 }
 
 
+.copyright {
+   text-align: center;
 
+}
 
 /*----------------------------------------------*/
 
@@ -402,8 +415,9 @@ h1 {
 .artisthero {
    justify-content: center;
    text-align: center;
-   font-family: 'Architects Daughter', cursive;
-   background-color: rgb(95, 180, 178);
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bold;
+   background-color: rgb(57, 42, 93);
    border-top-left-radius: 40px;
    border-top-right-radius: 40px;
    padding: 20px;
