@@ -22,18 +22,30 @@
      <button onclick="four()">3</button>--> 
    </div>
 
-     <div class="row">
-       <div class="column">
-          <img src="folio_images/LB_Colour_Lounge_Cut22.png">
-       </div>
-
-       <div class="column">
-         <img src="folio_images/LB_colour_Suburbs.png">
-       </div>
-
-       <div class="column">
-         <img src="folio_images/LB_Colour_Changeroom_Cut27.png">
-       </div>
+  <div class="main">
+      <div class="column">
+    <figure>
+      <img src='folio_images/LB_Colour_bar.png' alt='missing' />
+      <figcaption>Bar final background - Indecision, 2026</figcaption>
+   </figure>
+   <figure>
+     <img src='folio_images/LB_colour_Suburbs.png' alt='missing' />
+    <figcaption>Suburbs final background - Indecision, 2026</figcaption>
+   </figure>
+     <figure>
+      <img src='folio_images/LB_Colour_Changeroom_Cut27.png' alt='missing' />
+      <figcaption>Changeroom final background - Indecision, 2026</figcaption>
+   </figure>
+   <figure>
+     <img src='folio_images/LB_Colour_GymRoof_Cut47.png' alt='missing' />
+    <figcaption>Gym final background - Indecision, 2026</figcaption>
+   </figure>
+      <figure>
+      <img src='folio_images/LB_Colour_ParkFLATS_Cut11.png' alt='missing' />
+      <figcaption>Park final background - Indecision, 2026</figcaption>
+   </figure>
+    </div>
+  </div>
 
      </div>
 
@@ -60,42 +72,6 @@
 
   </div>
 
-  <script>
-
-   function dropdown() {
-
-      document.querySelector(".navigation").classList.toggle("active");
-
-   }
-
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
-
-// Declare a "loop" variable
-var i;
-
-// Full-width images
-function one() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "100%";
-  }
-}
-
-// Two images side by side
-function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "50%";
-  }
-}
-
-// Four images side by side
-function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "25%";
-  }
-}
-
-</script>
 
 
 

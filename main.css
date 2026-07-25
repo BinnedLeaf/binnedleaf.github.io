@@ -78,7 +78,7 @@ body {
 }
 
 .navigation img {
-   width: 1000;
+   width: 1000px;
   display: block;
   margin: auto;
 }
@@ -150,8 +150,16 @@ body {
   transform:scale(1.5);
 }
 
+.contain1 img {
+  text-align: center;
+  margin-left: 85px;
+  clear: both;
+}
 
-
+.contain2  {
+ text-align: center;
+ margin-left: 3px;
+}
  
 /* content section */
 
@@ -175,10 +183,45 @@ body {
    width: 500px;
    margin: 0 auto;
    display:flex;
+   flex-direction: column;
    flex-wrap: wrap;
    justify-content: center;
    
 }
+
+.comicContent {
+   padding: 20px;
+   -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+   width: 500px;
+   margin: 0 auto;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+} 
+
+.comicContent a {
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin-bottom: 20px;
+}
+
+figure a {
+   color: #8c2abc;
+}
+
+.comicContent img {
+   display: block;
+   margin-top: 13px;
+   margin-bottom: 0%;
+}
+
+.comicContent figcaption {
+   font-family: 'Lucida Sans', Arial, sans-serif;
+   margin-bottom: 100px;
+}
+
 
 .content h1 {
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -200,7 +243,16 @@ body {
    color: rgb(0, 0, 0);
    font-size: 30px;
    font-weight: normal;
+  
+}
 
+.content h3 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 19px;
+   font-weight: normal;
+   text-align: center;
+   display: block;
 }
 
 .content p {
@@ -221,24 +273,24 @@ h1 {
    word-spacing: 30px;
 }
 
-.row {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0 4px;
-   background-color: #ffffff;
-   border-bottom-left-radius: 40px;
-   border-bottom-right-radius: 40px;
-}
+
 /** Plan to have images be a carousel, and for all images to be watermarked**/
+
 .column {
-   flex: 100%;
-   padding: 12px 4px;
+   text-align: center;
 }
 
 .column img {
-   width: 50%;
-   display: block;
-   margin: auto;
+   width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 4%;
+  margin: 0 auto;
+}
+
+.column figure {
+ display:inline-block;
+ margin:0 auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -266,94 +318,15 @@ h1 {
    padding: 20px;
    background-size: cover;
    background-position: center;
-   text-shadow: none !important;
  }
 
-/*----------------------------------------------*/
-
-/* info section */
-
-/*----------------------------------------------*/
-
-.info{
-   display:flex;
-   flex-wrap: wrap;
-   border:5px solid white;
-   justify-content: center;
+.main figcaption {
+   font-family:'Lucida Sans', Arial, sans-serif;
 }
 
-.infobox{
-   border:5px solid white;
-   background-color: rgba(117, 111, 155, 0.48);
-   width:50%;
-   display: flex;
-   justify-content: space-evenly;
+iframe {
+   margin-bottom: 50px;
 }
-
-.infobox h2 {
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 50px;
-   font-weight: normal;
-   color: white;
-   text-align: center;
-   padding: 20px;
-}
-.infobox h3 {
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   font-size: 20px;
-   font-weight: normal;
-   text-align: center;
-   padding: 20px;
-}
-
-.infobox figure{
-   padding: 10px;
-}
-
-.infobox p figcaption {
-   font-family: 'Courier New', Courier, monospace;
-   color: white;
-   font-size: 16px;
-   text-align: justify;
-   margin-left: 20px;
-   padding: 20px;
-}
-
-.infobox h4 {
-  font-family: 'Courier New', Courier, monospace;
-   color: white;
-   font-size: 20px;
-   font-weight: normal;
-   font-style: italic;
-   text-align: justify;
-   padding: 20px;
-}
-
-.infobox img {
-   width: 50%;
-   
-   display: flex;
-   justify-content: center;
-   margin-top: 50px;
-   margin-left: 100px;
-   display: block;
-}
-
-.infobox a {
-   color: rgb(255, 243, 251);
-   text-decoration: none;
-   transition: 0.5s;
-}
-
-.infobox a:hover {
-   color: rgb(227, 140, 198);
-   background-color: black;
-   border-radius: 40%;
-   text-decoration: overline, underline;
-}
-
-
 /*----------------------------------------------*/
 
 /* footer section */
@@ -363,16 +336,14 @@ h1 {
 .footer {
    display: flex;
    justify-content: space-evenly;
+   margin-top: 30%;
 }
 
 .footer p{
-   font-family: 'Architects Daughter', cursive;
+  font-family:'Lucida Sans', Arial, sans-serif;
    color: white;
 }
 
-.footer div{
-   margin:20px;
-}
 
 .footerlinks a {
    display: block;
@@ -402,8 +373,9 @@ h1 {
 
 
 .copyright {
+   margin-top: 10px;
    text-align: center;
-
+  font-family:'Lucida Sans', Arial, sans-serif;
 }
 
 /*----------------------------------------------*/
@@ -424,59 +396,6 @@ h1 {
    background-size: cover;
    background-position: center;
    text-shadow: none !important;
-}
-
-.artistcontent{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
-   padding-top:30px;
-   padding-bottom:40px;
-   backdrop-filter: blur(15px);
-   background-color: #c0c1d553;
-}
-
-.artistinfo {
-   background-color: rgba(173, 216, 230, 0.58);
-   width: 30%;
-   border-radius: 20px;
-   padding: 30px;
-   padding-bottom: 10px;
-}
-
-.pinkbg {
-   background-color: rgba(255, 107, 153, 0.5);
-}
-
-.artistinfo h2 {
-   text-align:center;
-   font-family: "Press Start 2P";
-   font-size: 28px;
-   color:rgb(255, 255, 255);
-   -webkit-text-stroke: black;
-   -webkit-text-stroke-width: 2px;
-}
-
-
-.artistinfo p {
-   text-align:center;
-   font-family: "Baloo Chettan 2", cursive;
-   padding-top: 30px;
-}
-
-.artistinfo img {
-   width: 100%;
-   border-radius: 200px;
-   border: 10px solid white;
-   box-shadow: 2px 2px 5px grey;
-   filter: grayscale();
-   transition: 0.5s;
-}
-
-.artistinfo:hover img {
-   filter: none;
-   transform: scale(1.1) rotate(-8deg);
-   box-shadow: 10px 10px 20px rgba(46, 45, 47, 0.799);
 }
 
 /*----------------------------------------------*/
