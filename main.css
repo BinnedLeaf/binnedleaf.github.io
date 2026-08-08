@@ -273,6 +273,22 @@ h1 {
    word-spacing: 30px;
 }
 
+.aboutme {
+   margin-top: 30%;
+   justify-content: center;
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   background-color: rgb(251, 234, 214);
+   border-radius: 40px;
+   padding: 20px;
+   background-size: cover;
+   background-position: center;
+}
+
+.aboutme img {
+   width: 400px;
+}
 
 /** Plan to have images be a carousel, and for all images to be watermarked**/
 
